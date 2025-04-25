@@ -1,0 +1,121 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>PageTwo</ion-title>
+  </ion-toolbar>
+
+<!-- Back button for navigation -->
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <!-- Clothes 1 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div>
+          <!-- Display image how the product looks like , name of the produc, price, cheak out the product and a like system-->
+          <img src="https://media.boohooman.com/i/boohooman/cmm06584_black_xl_2/black-oversized-boxy-extended-neck-ofcl-man-t-shirt?$product_page_main_magic_zoom$"/>
+          <h2>Oversized Boxy Extended Neck Ofcl Man T-Shirt</h2>
+          <p>€15.00</p>
+           <!-- Toggle Like functionality -->
+          <p (click)="toggleLike('Clothe1')" style="cursor: pointer; color: white;">
+            {{ isLiked('Clothe1') ? 'Liked❤️' : 'Like' }}
+          </p>
+           <!-- Button to view the shoe details -->
+          <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/oversized-boxy-extended-neck-ofcl-man-t-shirt/CMM06584.html?color=105">View Clothe</ion-button>
+        </div>
+      </ion-col>
+
+      <!-- Clothes 2 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div>
+          <img src="https://media.boohooman.com/i/boohooman/cmm11338_stone_xl/stone-relaxed-fit-striped-hem-open-stitch-knitted-shirt?$product_page_main_magic_zoom$"/>
+          <h2>Relaxed Fit Striped Hem Open Stitch Knitted Shirt</h2>
+          <p>€25.00</p>
+          <p (click)="toggleLike('Clothe2')" style="cursor: pointer; color: white;">
+            {{ isLiked('Clothe2') ? 'Liked❤️' : 'Like' }}
+          </p>
+          <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/relaxed-fit-striped-hem-open-stitch-knitted-shirt/CMM11338.html?color=165">View Clothe</ion-button>
+        </div>
+      </ion-col>
+            <!-- Clothes 3 -->
+            <ion-col size="12" size-md="6" size-lg="4">
+              <div>
+                <img src="https://media.boohooman.com/i/boohooman/cmm10786_navy_xl/navy-boxy-knitted-stripe-shirt?$product_page_main_magic_zoom$"/>
+                <h2>Boxy Knitted Stripe Shirt</h2>
+                <p>€28.00</p>
+                <p (click)="toggleLike('Clothe3')" style="cursor: pointer; color: white;">
+                  {{ isLiked('Clothe3') ? 'Liked❤️' : 'Like' }}
+                </p>
+                <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/boxy-knitted-stripe-shirt/CMM10786.html?color=148">View Clothe</ion-button>
+              </div>
+            </ion-col>
+      
+            <!-- Clothes 4 -->
+            <ion-col size="12" size-md="6" size-lg="4">
+              <div>
+                <img src="https://media.boohooman.com/i/boohooman/cmm03676_washed%20black_xl_2/washed-black-slim-flared-mmxiii-applique-gusset-jeans?$product_page_main_magic_zoom$"/>
+                <h2>Slim Flared MMXIII Applique Gusset Jeans</h2>
+                <p>€28.00/p>
+                  <p (click)="toggleLike('Clothe4')" style="cursor: pointer; color: white;">
+                    {{ isLiked('Clothe4') ? 'Liked❤️' : 'Like' }}
+                  </p>
+                <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/slim-flared-mmxiii-applique-gusset-jeans/CMM03676.html?color=436">View Clothe</ion-button>
+              </div>
+            </ion-col>
+             <!-- Clothes  5-->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div>
+          <img src="https://media.boohooman.com/i/boohooman/cmm13327_black_xl/black-oversized-v-neck-jacquard-knitted-polo?$product_page_main_magic_zoom$"/>
+          <h2>Oversized V Neck Jacquard Knitted Polo</h2>
+          <p>€25.00</p>
+          <p (click)="toggleLike('Clothe5')" style="cursor: pointer; color: white;">
+            {{ isLiked('Clothe5') ? 'Liked❤️' : 'Like' }}
+          </p>
+          <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/oversized-v-neck-jacquard-knitted-polo/CMM13327.html?color=105">View Clothe</ion-button>
+        </div>
+      </ion-col>
+
+      <!-- Clothes 6 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <div>
+          <img src="https://media.boohooman.com/i/boohooman/cmm13728_white_xl/white-oversized-guinness-license-printed-t-shirt?$product_page_main_magic_zoom$"/>
+          <h2>Oversized Guinness License Printed T-Shirt</h2>
+          <p>€20.00 </p>
+          <p (click)="toggleLike('Clothe6')" style="cursor: pointer; color: white;">
+            {{ isLiked('Clothe6') ? 'Liked❤️' : 'Like' }}
+          </p>
+          <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/oversized-guinness-license-printed-t-shirt/CMM13728.html?color=173">View Clothe</ion-button>
+        </div>
+      </ion-col>
+            <!-- Clothes 7 -->
+            <ion-col size="12" size-md="6" size-lg="4">
+              <div>
+                <img src="https://media.boohooman.com/i/boohooman/cmm10512_light%20blue_xl/light-blue-relaxed-fit-ripped-knee-heart-applique-jeans?$product_page_main_magic_zoom$"/>
+                <h2>Relaxed Fit Ripped Knee Heart Applique Jeans</h2>
+                <p>€70.00</p>
+                <p (click)="toggleLike('Clothe7')" style="cursor: pointer; color: white;">
+                  {{ isLiked('Clothe7') ? 'Liked❤️' : 'Like' }}
+                </p>
+                <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/relaxed-fit-ripped-knee-heart-applique-jeans/CMM10512.html?color=564">View Clothe</ion-button>
+              </div>
+            </ion-col>
+      
+            <!-- Clothes 8 -->
+            <ion-col size="12" size-md="6" size-lg="4">
+              <div>
+                <img src="https://media.boohooman.com/i/boohooman/cmm11607_black_xl/relaxed-fit-black-carpenter-dungarees?$product_page_main_magic_zoom$"/>
+                <h2>Relaxed Fit Black Carpenter Dungarees</h2>
+                <p>€45.00</p>
+                <p (click)="toggleLike('Clothe8')" style="cursor: pointer; color: white;">
+                  {{ isLiked('Clothe8') ? 'Liked❤️' : 'Like' }}
+                </p>
+                <ion-button expand="block" fill="outline" color="primary" href="https://www.boohooman.com/eu/relaxed-fit-black-carpenter-dungarees/CMM11607.html?color=105">View Clothe</ion-button>
+              </div>
+            </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

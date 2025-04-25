@@ -1,0 +1,7 @@
+{
+  "name": "TomaszIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

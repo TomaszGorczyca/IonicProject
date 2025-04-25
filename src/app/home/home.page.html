@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Welcome to Cool Shoes & Cloths</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item><!-- Two-way data binding with ngModel for capturing user input in userName variable -->
+    <ion-label position="floating">Enter your name for a free 10% off!!</ion-label>
+    <ion-input [(ngModel)]="userName"></ion-input>
+  </ion-item>
+  
+  <p style="color: white; margin-left: 16px;">
+    Hello, {{ userName || 'guest' }}!
+  </p>
+  <ion-list>
+    <!-- List of items with navigation -->
+    <ion-item routerLink="/page-one" button>
+      Cheak Out Some Shoe's
+    </ion-item>
+    <ion-item routerLink="/page-two" button>
+      Cheak Out Some Clothing
+    </ion-item>
+  </ion-list>
+</ion-content>
